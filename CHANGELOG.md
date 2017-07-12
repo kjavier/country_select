@@ -1,4 +1,13 @@
-## 2.5.0 2015-11-10
+## 3.0.0 2016-11-25
+
+  * #138 - Upgrade to Countries 2.0
+  * #136 - Drop support for Ruby 1.9.3 as countries 2.0 no longer supports it
+
+## 2.5.2 2015-11-10
+
+  * #127 - Fix multi-selects - @jjballano
+
+## 2.5.1 2015-11-10
 
   * #118 - Fix bad require of countries gem that caused issues if you
            already had a `Country` class
