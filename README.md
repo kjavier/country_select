@@ -29,6 +29,12 @@ Or put the following in your Gemfile
 gem 'country_select'
 ```
 
+If you don't want to require `sort_alphabetical` (it depends on `unicode_utils` which is known to use lots of memory) you can opt out of using it as follows:
+
+```ruby
+gem 'country_select', require: 'country_select_without_sort_alphabetical'
+```
+
 ## Usage
 
 Within `form_for` you can use this select like other form elements:
@@ -67,6 +73,11 @@ Pre-selecting a particular country:
 
 ```ruby
 country_select("user", "country", selected: "GB")
+```
+
+Changing the divider when priority_countries is active.
+```ruby
+country_select("user", "country", priority_countries: ["AR", "US"], priority_countries_divider: "~~~~~~")
 ```
 
 Using existing `select` options:
